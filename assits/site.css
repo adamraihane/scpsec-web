@@ -1,0 +1,87 @@
+:root{--blue:#278db9;--blue-dark:#1977a1;--ink:#354956;--muted:#78909c;--line:#cbdfe6;--pale:#e9f7fc;--white:#fff;--green:#5dbb83;--red:#b93838}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:82px}body{margin:0;background:#edf7fa;color:var(--ink);font-family:"Segoe UI",Tahoma,Arial,sans-serif;font-size:14px;line-height:1.6}.site-header{height:68px;padding:0 max(24px,calc((100% - 980px)/2));display:flex;align-items:center;justify-content:space-between;background:#fff;border-bottom:1px solid #dcebf0}.brand{display:flex;align-items:center;gap:9px;color:#315267;font-weight:600;font-size:15px;text-decoration:none}.brand img{width:31px;height:31px;object-fit:contain}.site-header nav{display:flex;gap:25px}.site-header nav a,.site-footer>a:last-child{color:#527081;text-decoration:none;font-size:12px}.site-header nav a:hover,.site-footer a:hover{color:var(--blue)}.welcome{min-height:650px;padding:35px 20px 22px;background:linear-gradient(180deg,#e4f5fb 0,#f4fafc 100%);display:flex;flex-direction:column;align-items:center;justify-content:center}.login-window{width:min(100%,430px);background:#fff;border:1px solid #bfd9e2;box-shadow:0 16px 38px rgba(57,100,121,.14);border-radius:7px;overflow:hidden}.window-titlebar{height:31px;padding:0 10px;display:flex;align-items:center;gap:7px;background:#f6fafb;border-bottom:1px solid #e6eff2;color:#778990;font-size:11px}.window-titlebar img{width:16px;height:16px;object-fit:contain}.window-controls{margin-left:auto;display:flex;align-items:center;gap:0;height:100%;color:#83949b}.window-controls i,.window-controls b{width:32px;height:100%;display:grid;place-items:center;font-style:normal;font-weight:400;border-left:1px solid #edf1f2}.window-controls b{font-size:17px}.login-body{padding:25px 34px 19px;text-align:center}.main-logo{width:74px;height:74px;object-fit:contain;margin:0 auto 6px}.login-body h1{font-size:23px;line-height:1.25;margin:0;color:#236d94;font-weight:650;letter-spacing:-.4px}.tagline{margin:4px 0 20px;color:#7090a0;font-size:12px}.auth-tabs{display:grid;grid-template-columns:1fr 1fr;border:1px solid #c5dce4;border-bottom:0;background:#fbfdfe}.auth-tab{height:39px;border:0;border-bottom:1px solid #c5dce4;background:#f6fafb;color:#657e89;font:12px "Segoe UI",sans-serif;cursor:pointer}.auth-tab+ .auth-tab{border-left:1px solid #dce9ed}.auth-tab.active{background:#fff;border-bottom-color:#fff;color:var(--blue-dark);font-weight:650}.auth-form{padding:17px 16px 18px;border:1px solid #c5dce4;border-top:0;display:flex;flex-direction:column;gap:10px}.auth-form input:not([type=checkbox]),.auth-form select{width:100%;height:38px;border:1px solid #c7d9df;border-radius:0;background:#fff;padding:0 10px;color:#354956;font:12px "Segoe UI",sans-serif;outline:none}.auth-form input::placeholder{color:#91a1a9}.auth-form input:focus,.auth-form select:focus{border-color:#50a4c5;box-shadow:0 0 0 2px rgba(39,141,190,.12)}.login-options{display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;color:#647d88;font-size:11px;margin:0 0 1px}.remember{display:inline-flex;align-items:center;gap:4px;margin-right:4px;cursor:pointer}.remember input{accent-color:var(--blue)}.presence-label{color:#758991}.login-options select{width:auto;height:26px;padding:0 19px 0 6px;font-size:11px}.primary-button{min-height:38px;padding:9px 20px;border:1px solid #227ead;border-radius:0;background:var(--blue);color:#fff;font:600 12px "Segoe UI",sans-serif;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;align-self:center}.primary-button:hover{background:var(--blue-dark)}.primary-button:disabled{opacity:.6;cursor:wait}.form-message{min-height:18px;margin:10px 0 0;font-size:11px;color:#58717e}.form-message.error{color:var(--red)}.form-message.success{color:#357d52}.stay-connected{margin:14px 0 0;color:#8098a3;font-size:10px;letter-spacing:.2px}.account-panel{padding:20px 17px;border:1px solid #c5dce4;text-align:center}.account-panel h2{margin:11px 0 2px;font-size:20px;color:#236d94}.account-handle{margin:0 0 11px;color:#6b8794;font-size:12px}.account-message{font-size:12px;color:#667f8b;line-height:1.7}.account-status{display:flex;align-items:center;justify-content:center;gap:7px;color:#628171;font-size:11px}.status-dot{width:8px;height:8px;background:var(--green);border-radius:50%}.download-cta{margin:4px auto 10px}.signout-button{display:block;margin:0 auto;border:0;background:transparent;color:#347f9f;font:12px "Segoe UI",sans-serif;cursor:pointer}.is-hidden{display:none!important}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.welcome-caption{width:min(100%,430px);margin-top:13px;display:flex;justify-content:space-between;color:#83a0ac;font-size:8px;letter-spacing:1.1px}.content-section{max-width:900px;margin:0 auto;padding:69px 28px;background:#fff}.section-title{display:flex;align-items:flex-start;gap:18px}.section-title>span{width:34px;height:34px;flex:0 0 34px;border:1px solid #cce2e9;border-radius:50%;display:grid;place-items:center;color:#4f90a9;font-size:10px;margin-top:3px}.section-kicker{margin:0 0 5px;color:#6d929f;font-size:9px;letter-spacing:1.5px;font-weight:650}.section-title h2{margin:0;color:#33556a;font-size:26px;line-height:1.25;font-weight:600;letter-spacing:-.5px}.section-copy{max-width:690px;margin:19px 0 0 52px;color:#6a7f89;font-size:13px;line-height:1.9}.feature-section{border-top:1px solid #edf3f5;background:#fff}.feature-list{margin:22px 0 0 52px;display:grid;grid-template-columns:1fr 1fr;gap:12px}.feature-list article{display:flex;align-items:flex-start;gap:11px;padding:15px 14px;border:1px solid #e2edf0;background:#fcfefe;min-height:86px}.feature-list img{width:27px;height:27px;object-fit:contain;padding:3px;background:#eaf6f9;border-radius:5px}.feature-list h3,.download-card h3{margin:0 0 3px;font-size:13px;color:#3c6175;font-weight:650}.feature-list p,.download-card p{margin:0;color:#738791;font-size:11px;line-height:1.6}.downloads-section{border-top:1px solid #edf3f5;background:#f9fcfd}.download-cards{margin:23px 0 0 52px;display:grid;grid-template-columns:1fr 1fr;gap:13px}.download-card{display:flex;align-items:flex-start;gap:13px;padding:17px;border:1px solid #d8e8ed;background:#fff}.download-icon{width:38px;height:38px;flex:0 0 38px;border:1px solid #d8e9ee;border-radius:5px;display:grid;place-items:center;color:#3988a6;font-size:19px}.download-icon.platform-icon{width:44px;height:44px;flex:0 0 44px;border:0;border-radius:0;background:transparent}.platform-icon img{display:block;width:100%;height:100%;object-fit:contain}.linux-mark{color:#648b70}.download-card p{margin:3px 0 9px}.download-card code{font-family:Consolas,monospace;background:#f0f6f8;padding:1px 3px;color:#45697a;font-size:10px}.download-link{display:inline-block;color:#237da3;font-size:11px;font-weight:650;text-decoration:none}.download-link:hover{text-decoration:underline}.download-link span{padding-left:5px}.download-note{margin:13px 0 0 52px;font-size:10px;color:#80949d}.site-footer{min-height:66px;padding:13px max(24px,calc((100% - 900px)/2));display:flex;align-items:center;gap:16px;border-top:1px solid #dce9ed;background:#fff;color:#7d9098;font-size:10px}.footer-brand{font-size:12px}.footer-brand img{width:25px;height:25px}.site-footer>span{margin-left:auto}.site-footer>a:last-child{text-decoration:none}
+@media(max-width:620px){.site-header{height:auto;min-height:60px;padding:10px 17px;align-items:flex-start;flex-direction:column;gap:7px}.brand{font-size:14px}.brand img{width:27px;height:27px}.site-header nav{width:100%;gap:22px}.site-header nav a{font-size:11px}.welcome{padding:25px 13px 19px;min-height:0}.login-body{padding:20px 18px 16px}.main-logo{width:65px;height:65px}.login-body h1{font-size:21px}.auth-form{padding:15px 11px}.content-section{padding:48px 20px}.section-title{gap:12px}.section-title h2{font-size:22px}.section-copy,.feature-list,.download-cards,.download-note{margin-left:46px}.section-copy{font-size:12px}.feature-list,.download-cards{grid-template-columns:1fr}.feature-list article{min-height:0}.site-footer{padding:14px 18px;flex-wrap:wrap;gap:10px}.site-footer>span{margin-left:auto}.footer-brand{margin-right:auto}}
+.splash-message{margin:18px 0 21px;color:var(--muted);font-size:13px}.splash-actions{display:flex;flex-direction:column;align-items:center;gap:9px}.splash-actions .primary-button,.splash-actions .secondary-button{width:min(100%,250px);text-decoration:none}.secondary-button{display:inline-block;padding:8px 14px;border:1px solid var(--line);border-radius:3px;background:#fff;color:var(--blue-dark);font-weight:600;font-size:12px}.secondary-button:hover{background:#f4fafc}
+.linux-setup{margin-top:24px;padding:20px;background:#f7fbfc;border:1px solid var(--line);border-radius:4px;text-align:left}.linux-setup>h3{margin:0 0 12px;color:#315267}.distro-command{margin:14px 0}.distro-command h4{margin:0 0 5px;color:#527081;font-size:13px}.distro-command pre{overflow-x:auto;margin:0;padding:12px;background:#263943;color:#eef8fb;border-radius:3px;line-height:1.6}.linux-setup>p{margin:14px 0 0;color:var(--muted);font-size:12px}.linux-setup code{font-family:Consolas,monospace;font-size:12px}
+.linux-steps{margin:0 0 18px;padding-left:22px;color:#657d88;font-size:12px;line-height:1.8}.linux-steps li{margin:5px 0;padding-left:4px}.linux-launch{overflow-x:auto;margin:15px 0;padding:12px;background:#263943;color:#eef8fb;border-radius:3px;line-height:1.7}
+.download-intro{margin:7px 0 0;color:var(--muted);font-size:12px}.download-cards{align-items:stretch}.download-card{min-width:0;min-height:220px}.download-content{min-width:0;flex:1}.platform-label{display:block;margin:0 0 5px;color:#7897a2;font-size:9px;font-weight:700;letter-spacing:1.1px}.download-content h3{font-size:16px}.download-content>p{min-height:38px;margin:5px 0 13px}.download-button{display:inline-flex;align-items:center;justify-content:space-between;gap:15px;min-height:38px;padding:8px 13px;border:1px solid #227ead;background:var(--blue);color:#fff;font-size:11px;font-weight:650;text-decoration:none}.download-button:hover{background:var(--blue-dark)}.download-button span{font-size:16px}.alternate-downloads{margin-top:13px;border-top:1px solid #e7eff1;padding-top:9px}.alternate-downloads summary,.help-item summary{cursor:pointer;color:#397b96;font-size:11px;font-weight:650;list-style:none}.alternate-downloads summary::-webkit-details-marker,.help-item summary::-webkit-details-marker{display:none}.alternate-downloads summary:after,.help-item summary:after{content:"+";float:right;color:#7c9aa5;font-size:15px;line-height:1}.alternate-downloads[open] summary:after,.help-item[open] summary:after{content:"−"}.alternate-downloads>a{display:block;margin:9px 0 0;color:#527889;font-size:11px;text-decoration:none}.alternate-downloads>a:hover{text-decoration:underline;color:var(--blue-dark)}.alternate-downloads>p{margin:10px 0 6px}.download-help{margin:22px 0 0 52px;padding:21px 22px;background:#fff;border:1px solid #d8e8ed}.download-help>h3{margin:0;color:#3c6175;font-size:17px}.help-lead{margin:4px 0 13px;color:var(--muted);font-size:11px}.help-item{border-top:1px solid #e6eef0;padding:12px 0}.help-item .linux-steps{margin:10px 0 0}.help-item>p{margin:10px 0 2px;color:#657d88;font-size:12px;line-height:1.7}.help-item .distro-command{margin:12px 0}.help-item .distro-command pre{font-size:11px}.help-item .linux-launch{font-size:11px}
+.download-button.secondary-package{margin-top:8px;background:#fff;color:var(--blue-dark);border-color:#b9d7e1}.download-button.secondary-package:hover{background:#f2fafc}
+@media(max-width:620px){.download-intro{max-width:350px}.download-card{min-height:0;padding:14px}.download-content>p{min-height:0}.download-help{margin-left:46px;padding:17px 15px}.download-help>h3{font-size:15px}.help-item{padding:11px 0}}
+.wallet-warning{margin:0 0 22px 52px;padding:14px 18px;background:#fff7e7;border:1px solid #e6c87a;color:#6d5315;font-size:13px;line-height:1.65}.wallet-warning strong{color:#573c00}@media(max-width:620px){.wallet-warning{margin-left:46px;padding:12px}}
+.privacy-explainer{margin-top:0;margin-bottom:22px}.privacy-points{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 22px}.privacy-points p{margin:10px 0 0;color:#657d88;font-size:12px;line-height:1.7}.privacy-points strong{color:#3c6175}@media(max-width:620px){.privacy-points{grid-template-columns:1fr}}
+
+/* Responsive polish: comfortable touch targets, centered mobile layout, and gentle motion. */
+:root{--motion-ease:cubic-bezier(.2,.75,.25,1)}
+body{overflow-x:hidden}
+.site-header nav a,.site-footer>a:last-child{min-height:40px;display:inline-flex;align-items:center}
+.primary-button,.secondary-button,.download-button{min-height:44px;border-radius:4px;transition:background-color .18s ease,box-shadow .18s ease,transform .18s var(--motion-ease)}
+.primary-button:hover,.secondary-button:hover,.download-button:hover{transform:translateY(-2px);box-shadow:0 5px 14px rgba(39,110,140,.16)}
+.login-window{animation:window-enter .65s var(--motion-ease) both}
+.welcome-caption{animation:fade-up .65s .12s var(--motion-ease) both}
+.content-section{animation:fade-up .7s var(--motion-ease) both}
+.feature-list article,.download-card{border-radius:7px;transition:transform .2s var(--motion-ease),box-shadow .2s ease,border-color .2s ease}
+.feature-list article:hover,.download-card:hover{transform:translateY(-3px);border-color:#bfdce5;box-shadow:0 9px 22px rgba(61,107,126,.09)}
+.platform-icon img{transition:transform .2s var(--motion-ease)}
+.download-card:hover .platform-icon img{transform:scale(1.06)}
+.wallet-warning,.download-help{border-radius:7px}
+.download-button:focus-visible,.primary-button:focus-visible,.secondary-button:focus-visible,.site-header a:focus-visible,.site-footer a:focus-visible,summary:focus-visible{outline:3px solid rgba(39,141,185,.35);outline-offset:3px}
+@keyframes window-enter{from{opacity:0;transform:translateY(14px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes fade-up{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:760px){
+ .site-header{position:relative;padding:10px 18px;align-items:center;flex-direction:row;gap:12px}
+ .site-header nav{width:auto;justify-content:center;gap:clamp(10px,3vw,22px)}
+ .site-header nav a{font-size:12px}
+ .welcome{padding:26px 16px 20px}
+ .content-section{padding:46px clamp(18px,5vw,32px)}
+ .section-title{justify-content:center;text-align:left;max-width:620px;margin:0 auto}
+ .section-copy,.feature-list,.download-cards,.download-note,.wallet-warning,.download-help{width:min(100%,620px);margin-left:auto;margin-right:auto}
+ .section-copy{margin-top:18px}
+ .feature-list{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .download-cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .download-card{padding:16px}
+ .wallet-warning{margin-top:18px}
+ .download-help{margin-top:20px}
+ .wallet-download-title{margin-top:40px}
+}
+@media(max-width:560px){
+ .site-header{align-items:flex-start;flex-direction:column;padding:11px 17px 8px;gap:3px}
+ .site-header nav{width:100%;justify-content:space-between;gap:8px}
+ .site-header nav a{min-height:40px;font-size:12px}
+ .welcome{padding:20px 13px 17px}
+ .login-window{width:min(100%,430px)}
+ .login-body{padding:22px 18px 17px}
+ .welcome-caption{width:min(100%,430px);font-size:7px;letter-spacing:.8px}
+ .content-section{padding:40px 17px}
+ .section-title{gap:10px;justify-content:flex-start}
+ .section-title>span{width:30px;height:30px;flex-basis:30px}
+ .section-title h2{font-size:clamp(20px,6vw,24px)}
+ .section-kicker{font-size:8px;letter-spacing:1.1px}
+ .section-copy{font-size:13px;line-height:1.75}
+ .feature-list,.download-cards{grid-template-columns:1fr;gap:11px}
+ .feature-list article{padding:15px;min-height:76px}
+ .download-card{min-height:0;padding:16px}
+ .download-content>p{min-height:0}
+ .download-button{width:100%;font-size:12px}
+ .alternate-downloads summary,.help-item summary{min-height:40px;display:flex;align-items:center;justify-content:space-between}
+ .wallet-warning{font-size:12px}
+ .download-help{padding:16px 14px}
+ .privacy-points{grid-template-columns:1fr}
+ .site-footer{justify-content:center;text-align:center}
+ .footer-brand{margin:0}
+ .site-footer>span{width:100%;margin:0}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+@media(max-width:560px){
+ .section-title{justify-content:center;text-align:center}
+ .section-title>div{min-width:0}
+ .section-copy{text-align:center}
+ .feature-list article{flex-direction:column;align-items:center;text-align:center}
+ .download-card{flex-direction:column;align-items:center;text-align:center}
+ .download-content{width:100%}
+ .platform-label{text-align:center}
+ .alternate-downloads{text-align:left}
+ .wallet-warning{text-align:center}
+ .download-help{text-align:left}
+ .download-help>h3,.download-help>.help-lead{text-align:center}
+ .privacy-points p{text-align:left}
+ .download-cards.wallet-link-cards{max-width:100%}
+}
