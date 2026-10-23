@@ -18,7 +18,7 @@
 <body>
   <header class="site-header">
     <a class="brand" href="#top"><img src="ico/msgsres_1.png" alt=""><span>FRTC Messenger</span></a>
-    <nav aria-label="Main navigation"><a href="#about">About</a><a href="#features">Features</a><a href="#downloads">Downloads</a><a href="https://login.scpsec.cc/" rel="noopener noreferrer" referrerpolicy="no-referrer">Login</a></nav>
+    <nav aria-label="Main navigation"><a href="#about">About</a><a href="#features">Features</a><a href="#downloads">Downloads</a><a href="#privacy">Privacy</a><a href="https://login.scpsec.cc/" rel="noopener noreferrer" referrerpolicy="no-referrer">Login</a></nav>
   </header>
   <main id="top">
     <section class="welcome" aria-labelledby="welcome-title">
@@ -65,14 +65,26 @@
       <div class="section-title wallet-download-title"><span>W</span><div><p class="section-kicker">SEPARATE APP</p><h2>Looking for the standalone wallet?</h2><p class="download-intro">The wallet-only app has its own page with separate Windows, Linux, and Android downloads. Scan a Bitcoin QR on Android, or open a bitcoin: link on an installed desktop wallet, to fill the Send screen for review. Opening a link never sends BTC.</p></div></div>
       <div class="download-cards wallet-link-cards">
         <article class="download-card"><div class="download-content"><span class="platform-label">FRTC WALLET</span><h3>Wallet only</h3><p>See Windows, Debian / Ubuntu, Fedora, and portable Linux options.</p><a class="download-button" href="wallet.html">Go to wallet downloads <span>→</span></a></div></article>
-      </div>      <section class="download-help privacy-explainer" aria-labelledby="privacy-title">
-        <h3 id="privacy-title">How wallet privacy works</h3>
+      </div>
+      <section class="download-help privacy-explainer" id="privacy" aria-labelledby="privacy-title">
+        <h3 id="privacy-title">Privacy and your data</h3>
+        <p class="help-lead">What FRTC stores, which services handle it, and how to browse the website through Tor.</p>
+        <div class="privacy-points">
+          <p><strong>Chat data:</strong> Profiles, contacts, groups, and messages are sent to the FRTC API and stored in PostgreSQL on our VPS. Chat data is not stored in Firestore. It is available to the people in the relevant conversations and is processed by FRTC to provide the service; it is not published publicly or sold.</p>
+          <p><strong>Authentication:</strong> Firebase Authentication is used for sign-in and email verification. Google/Firebase processes authentication and account data for that purpose; it does not host FRTC chat messages.</p>
+          <p><strong>Data transmission and hosting:</strong> Messages travel from your device to the FRTC API so they can be delivered and stored. The VPS hosting provider operates the server infrastructure. This means we cannot promise that data never leaves your device or is handled by no provider. Use the app only if this arrangement works for you.</p>
+          <p><strong>Deletion:</strong> You can request account deletion through <a href="https://login.scpsec.cc/" rel="noopener noreferrer" referrerpolicy="no-referrer">account management</a>. FRTC will remove associated account and chat data from active FRTC systems as part of the deletion process. Backup copies may remain until their normal expiry.</p>
+          <p><strong>Browse the site over Tor:</strong> Open the <a href="http://frtcynn54ri5vzj7ok5fzgauq6obwakejgew3n32nm7xjmumslzbn3yd.onion/" rel="noopener noreferrer" referrerpolicy="no-referrer">FRTC onion website</a> in Tor Browser. The onion address covers this website only; it does not automatically route Messenger sign-in or chat traffic through Tor. The desktop wallet's Tor connection is for wallet networking.</p>
+        </div>
+      </section>
+      <section class="download-help privacy-explainer" aria-labelledby="wallet-privacy-title">
+        <h3 id="wallet-privacy-title">How wallet privacy works</h3>
         <p class="help-lead">A plain-language summary of what FRTC’s Tor connection does—and its limits.</p>
         <div class="privacy-points">
           <p><strong>Wallet traffic:</strong> When you open the wallet, FRTC starts its included Tor connection. Bitcoin wallet network traffic is sent through Tor, and FRTC stops the Tor process it started when you close the wallet.</p>
           <p><strong>Receive QR:</strong> The wallet QR encodes the current Bitcoin address as a bitcoin: URI. Always check the address and network on the sending wallet before paying.</p>
           <p><strong>What this helps with:</strong> It helps keep your home IP address from being directly exposed to Bitcoin peers. Your internet provider may still see that you are connecting to Tor.</p>
-          <p><strong>What it does not cover:</strong> Tor is used for wallet networking only. Sign-in and chat connect to Firebase separately, so Firebase may associate those requests with your signed-in account. Bitcoin transactions and addresses are public, and Tor does not make them anonymous.</p>
+          <p><strong>What it does not cover:</strong> Tor is used for wallet networking only. Messenger sign-in uses Firebase Authentication, while chat data goes to the FRTC API on our VPS; neither is automatically routed through the wallet's Tor connection. Bitcoin transactions and addresses are public, and Tor does not make them anonymous.</p>
           <p><strong>Current status:</strong> The wallet and its privacy setup are experimental and have not been independently audited or validated with real Bitcoin mainnet funds. Do not deposit or send real BTC.</p>
         </div>
       </section>
