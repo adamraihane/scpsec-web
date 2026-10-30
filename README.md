@@ -7,4 +7,4 @@ Static public website for SCPSEC and FRTC, hosted on the SCPSEC VPS. Binary down
 - `assits/`: styles, scripts, and platform logos.
 - `ico/`: FRTC app icons.
 
-Deploy static files to `/var/www/scpsec-site`. Keep `login.scpsec.cc` and `api.scpsec.cc` in their separate Nginx virtual hosts.
+Deploy the static site files to the configured web root. Keep service and deployment configuration outside the public site.
